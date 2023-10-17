@@ -11,7 +11,7 @@ export default async function Projects() {
   if (!projects.length) {
     return (
       <p>
-        There is not project - <a href="/projects/new">create new project</a>
+        There is no project to list - <a href="/projects/new">create new project</a>
       </p>
     );
   }

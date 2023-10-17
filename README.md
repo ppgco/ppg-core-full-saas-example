@@ -45,6 +45,8 @@ https://deno.land/manual/getting_started/installation
 
 `lt --port 8000 --subdomain saas-example-full`
 
+Make sure that you will get this subdomain! if not, please provide new name in next steps.
+
 2. Run app:
 
 ```
@@ -55,7 +57,13 @@ Need testing token? please join us [on Discord](https://discord.gg/NVpUWvreZa)
 or contact via [email](mailto:support+core@pushpushgo.com)
 
 3. Go to website `https://saas-example-full.loca.lt` and authorize your IP
-   address for tunnel
+   address for tunnel `curl ipv4.icanhazip.com`
+
+4. Create new project
+5. Go to "integration details" and copy codes and paste in ./example-websites/example-1 directory (worker, and index)
+6. Run live-server `live-server ./example-websites/example-1`
+7. Subscribe for notifications on `open http://localhost:8080`
+8. Create new campaign and send notification.
 
 #### Example websites
 
@@ -63,7 +71,7 @@ In directory `./example-websites` there is example of websites using during
 tests - it's need to be rewrited with "new project" integration code. Just keep
 for directory "structure".
 
-Example websites can be run with `live-server example-websites/example-2`
+Example websites can be run with `live-server ./example-websites/example-1`
 
 ### Tests
 
