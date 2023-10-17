@@ -1,7 +1,7 @@
 # Example of CORE vendor implementation
 
 This is "just" an example repository for "vendor" that will try to estimate work
-to implement CORE by PushPushGo in their system. It's not stand alone project.
+to implement [CORE by PushPushGo](https://core.pushpushgo.com) in their system. It's not stand alone project.
 It's not optimized and cannot be used in production.
 
 ## What it contains?
