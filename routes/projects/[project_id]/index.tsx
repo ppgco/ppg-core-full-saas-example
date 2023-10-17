@@ -18,10 +18,11 @@ export default async function ProjectDetails(_req: Request, ctx: RouteContext) {
     new GetIntegrationScriptsCommand(ctx.params.project_id),
   );
 
-  // TODO fix this, add to DTO w/w
-  const temporaryDataForCheck = await app.project.getProjectAggregate(
+  // FIXME: add to DTO w/w
+  const temporaryDataForCheck = app.project.getProjectAggregate(
     ctx.params.project_id,
   );
+
   const temporaryDataForCheckDetails = await temporaryDataForCheck.details();
   return (
     <section>

@@ -10,6 +10,7 @@ export class SendCampaignCommand {
       projectId,
       plain.title,
       plain.content,
+      plain.icon,
     );
   }
 
@@ -17,6 +18,7 @@ export class SendCampaignCommand {
     public readonly projectId: ProjectID,
     public readonly title: string,
     public readonly content: string,
+    public readonly icon: string,
   ) {
   }
 }

@@ -15,7 +15,7 @@ export default function Campaigns(props: CampaignsProps) {
     <table>
       <thead>
         <tr>
-          <th>Campaign ID</th>
+          <th>Icon</th>
           <th>Title</th>
           <th>Content</th>
           <th>Statistics</th>
@@ -24,8 +24,8 @@ export default function Campaigns(props: CampaignsProps) {
       </thead>
       <tbody>
         {props.campaigns.map((item) => (
-          <tr>
-            <td>{item.meta.id}</td>
+          <tr key={item.meta.id}>
+            <td><img src={item.meta.icon} height={64} width={64}/></td>
             <td>{item.meta.title}</td>
             <td>{item.meta.content}</td>
             <td>

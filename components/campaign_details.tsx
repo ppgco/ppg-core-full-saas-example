@@ -14,6 +14,8 @@ export default function CampaignDetails(props: CampaignDetailsProps) {
       <p>ID: {props.meta.id}</p>
       <p>Title: {props.meta.title}</p>
       <p>Content: {props.meta.content}</p>
+      <p>Icon: {props.meta.icon}</p>
+      <p>Icon preview: <img src={props.meta.icon} width={150} height={150}></img></p>
     </>
   );
 }

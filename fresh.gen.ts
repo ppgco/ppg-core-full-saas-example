@@ -16,7 +16,8 @@ import * as $10 from "./routes/projects/[project_id]/campaigns/[campaign_id].tsx
 import * as $11 from "./routes/projects/[project_id]/campaigns/send.tsx";
 import * as $12 from "./routes/projects/[project_id]/index.tsx";
 import * as $13 from "./routes/projects/new.tsx";
-import * as $$0 from "./islands/chart.tsx";
+import * as $$0 from "./islands/campaign_form.tsx";
+import * as $$1 from "./islands/chart.tsx";
 
 const manifest = {
   routes: {
@@ -36,7 +37,8 @@ const manifest = {
     "./routes/projects/new.tsx": $13,
   },
   islands: {
-    "./islands/chart.tsx": $$0,
+    "./islands/campaign_form.tsx": $$0,
+    "./islands/chart.tsx": $$1,
   },
   baseUrl: import.meta.url,
 };

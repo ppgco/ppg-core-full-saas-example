@@ -4,6 +4,7 @@ export interface ICampaign {
   id: CampaignID;
   title: string;
   content: string;
+  icon: string;
 }
 
 export class Campaign {
@@ -12,6 +13,7 @@ export class Campaign {
       plain.id,
       plain.title,
       plain.content,
+      plain.icon,
     );
   }
 
@@ -19,6 +21,7 @@ export class Campaign {
     public readonly id: CampaignID,
     public title: string,
     public content: string,
+    public icon: string,
   ) {
   }
 

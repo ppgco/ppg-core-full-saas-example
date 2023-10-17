@@ -48,11 +48,6 @@ export class CoreSender implements ISender {
       endpoint: config.getPpgCoreApiEndpoint(),
       apiKey: config.getPpgCoreApiToken(),
     });
-
-    console.log("PPG Core configuration: ", {
-      endpoint: config.getPpgCoreApiEndpoint(),
-      apiKey: config.getPpgCoreApiToken(),
-    });
   }
 
   private async resolveBucketAndContextWithCache(
@@ -90,8 +85,8 @@ export class CoreSender implements ISender {
         // behaviourHuawei: "app://com.example.huawei/deep/link", // optional if not pass get from "behaviour"
 
         // smallIcon: "https://placehold.jp/64x64.png",
-        icon: "https://placehold.jp/150x150.png",
-        // image: "https://placehold.jp/768x550.png",
+        icon: campaign.icon,
+        image: "https://placehold.jp/768x550.png",
 
         // One of
         // expiresAt: "YYYY-MM-DDT00:00:00.000Z",
