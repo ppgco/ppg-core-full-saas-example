@@ -89,9 +89,9 @@ export class CoreSender implements ISender {
         // behaviourAndroid: "app://com.example.android/deep/link", // optional if not pass get from "behaviour"
         // behaviourHuawei: "app://com.example.huawei/deep/link", // optional if not pass get from "behaviour"
 
-        // smallIcon: "https://placehold.co/64",
-        icon: "https://placehold.co/256",
-        // image: "https://placehold.co/768x512",
+        // smallIcon: "https://placehold.jp/64x64.png",
+        icon: "https://placehold.jp/150x150.png",
+        // image: "https://placehold.jp/768x550.png",
 
         // One of
         // expiresAt: "YYYY-MM-DDT00:00:00.000Z",

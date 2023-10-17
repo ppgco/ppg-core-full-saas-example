@@ -1,8 +1,9 @@
 # Example of CORE vendor implementation
 
 This is "just" an example repository for "vendor" that will try to estimate work
-to implement [CORE by PushPushGo](https://core.pushpushgo.com) in their system. It's not stand alone project.
-It's not optimized and cannot be used in production.
+to implement [CORE by PushPushGo](https://core.pushpushgo.com) in their system.
+It's not stand alone project. It's not optimized and cannot be used in
+production.
 
 ## What it contains?
 
@@ -45,7 +46,8 @@ https://deno.land/manual/getting_started/installation
 
 `lt --port 8000 --subdomain saas-example-full`
 
-Make sure that you will get this subdomain! if not, please provide new name in next steps.
+Make sure that you will get this subdomain! if not, please provide new name in
+next steps.
 
 2. Run app:
 
@@ -60,7 +62,8 @@ or contact via [email](mailto:support+core@pushpushgo.com)
    address for tunnel `curl ipv4.icanhazip.com`
 
 4. Create new project
-5. Go to "integration details" and copy codes and paste in ./example-websites/example-1 directory (worker, and index)
+5. Go to "integration details" and copy codes and paste in
+   ./example-websites/example-1 directory (worker, and index)
 6. Run live-server `live-server ./example-websites/example-1`
 7. Subscribe for notifications on `open http://localhost:8080`
 8. Create new campaign and send notification.
