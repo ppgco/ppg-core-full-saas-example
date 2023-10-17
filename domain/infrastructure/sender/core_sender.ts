@@ -48,7 +48,7 @@ export class CoreSender implements ISender {
       endpoint: config.getPpgCoreApiEndpoint(),
       apiKey: config.getPpgCoreApiToken(),
     });
-    
+
     console.log("PPG Core configuration: ", {
       endpoint: config.getPpgCoreApiEndpoint(),
       apiKey: config.getPpgCoreApiToken(),
@@ -132,7 +132,9 @@ export class CoreSender implements ISender {
 
     const wrapedRecipients = recipients
       // Filter bad values during development, should be validated before save
-      .filter((recipient) => recipient.provider && Object.keys(recipient.payload).length > 0)
+      .filter((recipient) =>
+        recipient.provider && Object.keys(recipient.payload).length > 0
+      )
       .map((recipient) =>
         instance.bucket.createReceiver({
           ...recipient.payload,

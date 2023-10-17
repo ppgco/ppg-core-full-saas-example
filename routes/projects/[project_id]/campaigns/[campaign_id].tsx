@@ -23,7 +23,7 @@ export default async function CampaignPageDetails(
       <h3>Metadata</h3>
       <CampaignDetails meta={campaign.meta}></CampaignDetails>
       <h3>Statistics</h3>
-      <CampaignStatistics stats={campaign.stats}/>
+      <CampaignStatistics stats={campaign.stats} />
     </section>
   );
 }

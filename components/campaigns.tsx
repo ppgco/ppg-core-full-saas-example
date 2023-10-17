@@ -28,7 +28,11 @@ export default function Campaigns(props: CampaignsProps) {
             <td>{item.meta.id}</td>
             <td>{item.meta.title}</td>
             <td>{item.meta.content}</td>
-            <td>Sent: {sumAll('sent', item.stats.data)} / Delivered: {sumAll('delivered', item.stats.data)} / Clicked: {sumAll('click', item.stats.data)}</td>
+            <td>
+              Sent: {sumAll("sent", item.stats.data)} / Delivered:{" "}
+              {sumAll("delivered", item.stats.data)} / Clicked:{" "}
+              {sumAll("click", item.stats.data)}
+            </td>
             <td>
               <a
                 href={`/projects/${props.projectId}/campaigns/${item.meta.id}`}
