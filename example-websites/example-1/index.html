@@ -1,0 +1,45 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Example website</title>
+        <!-- Start website integration of our Saas Example - put this into head section -->
+        <script src="https://saas-example-full.loca.lt/api/scripts/49303c41-9766-4e33-87ce-08e0627ad600/integration" type="module"></script>
+        <!-- End website integration of our Saas Example -->
+        <style>
+            body {
+                max-width: 768px;
+                margin: 0 auto;
+                padding: 20px; 
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                grid-gap: 10px;
+            }
+    
+            .column {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="column">
+                <ul id="state-log"></ul>
+            </div>
+            <div class="column">
+                <p id="state">Initializing</p>
+                <button id="subscribe" disabled>subscribe</button>
+                <button id="unsubscribe" disabled>unsubscribe</button>
+            </div>
+        </div>
+        <div class="column">
+            <pre id="subscription"></pre>
+        </div>
+    </body>
+    </html>
